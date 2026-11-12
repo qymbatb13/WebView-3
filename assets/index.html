@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebView Local</title>
+  </head>
+  <body>
+    <h1>Локальная WebView</h1>
+    <button onclick="MyJSChannel.postMessage('Сообщение из JavaScript')">
+      Отправить сообщение
+    </button>
+    <p id="result"></p>
+    <script>
+      function sendOK() {
+        document.getElementById('result').textContent = 'Подтверждено';
+      }
+    </script>
+  </body>
+</html>
